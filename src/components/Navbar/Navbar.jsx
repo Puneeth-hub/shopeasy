@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './NavBar.css';
+import './Navbar.css';
 
 function Navbar({ cartCount }) {
   const [isOpen, setIsOpen] = useState(false);
