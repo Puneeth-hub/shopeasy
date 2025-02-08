@@ -1,0 +1,120 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #f4f0f8, #afc7f0);
+    color: rgb(5, 0, 0);
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
+  }
+  
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #070600;
+  }
+  
+  /* Cart Icon */
+  .cart-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+  
+  .cart-count {
+    background-color: #080800;
+    color: rgb(248, 243, 243);
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  
+  
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: rgb(15, 15, 15);
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to right, #f4f0f8, #afc7f0);
+      text-align: center;
+      padding: 10px 0;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li {
+      padding: 10px;
+    }
+  
+    .cart-icon {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .cart-icon {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+  
